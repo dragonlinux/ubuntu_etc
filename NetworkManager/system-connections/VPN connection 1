@@ -1,0 +1,19 @@
+
+[connection]
+id=VPN connection 1
+uuid=e3cafcf7-2cd2-4ad1-b3ed-76384db305ac
+type=vpn
+autoconnect=false
+
+[vpn]
+service-type=org.freedesktop.NetworkManager.pptp
+gateway=198.100.100.22
+require-mppe=yes
+user=dragon1988
+refuse-chap=yes
+refuse-eap=yes
+password-flags=1
+refuse-pap=yes
+
+[ipv4]
+method=auto

@@ -1,12 +1,12 @@
 # Subscription configuration file for CUPS v1.5.3
 # Written by cupsd
-NextSubscriptionId 5
-<Subscription 4>
+NextSubscriptionId 6
+<Subscription 5>
 Events all
-Owner anonymous
+Owner virtualdragon
 Recipient dbus://
 LeaseDuration 900
 Interval 0
-ExpirationTime 1376139466
-NextEventId 2
+ExpirationTime 1376146186
+NextEventId 1
 </Subscription>

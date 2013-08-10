@@ -11,14 +11,9 @@ getTouchDeviceId()
     xinput list | sed -nr "s|.*$1.*id=([0-9]+).*|\1|p"
 }
 
-ENABLEPROP="Synaptics Off"
+ENABLEPROP="Device Enabled"
 # Get the xinput device number and enabling property for the touchpad
-XINPUTNUM=$(getTouchDeviceId "SynPS/2 Synaptics TouchPad")
-
-if [ -z "$XINPUTNUM" ]; then
-    XINPUTNUM=$(getTouchDeviceId "PS/2 Elantech Touchpad")
-    ENABLEPROP="Device Enabled"
-fi
+XINPUTNUM=$(getTouchDeviceId "PS/2 Elantech Touchpad")
 
 # if we failed to get an input, exit
 [ -z "$XINPUTNUM" ] && exit 1

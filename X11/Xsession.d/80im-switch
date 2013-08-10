@@ -12,6 +12,8 @@
 #
 # X Input method setup script
 
+[ -x /usr/bin/im-switch ] || return 0
+
 # Keep original values related to IM
 _XIM=$XIM
 _XIM_PROGRAM=$XIM_PROGRAM
